@@ -19,6 +19,51 @@
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalLogin"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalLogin">Entre na Sua Conta</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="loginEmail" />
+              </div>
+              <div class="mb-3">
+                <label for="loginSenha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="loginSenha" />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Entrar na Conta
+              </button>
+              <div id="emailHelp" class="form-text">
+                Esqueceu a senha <a href="#">Clique Aqui</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fecha Modal -->
+
     <nav
       class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow"
     >
@@ -69,7 +114,14 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Login</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#modalLogin"
+              >Login</a
+            >
           </li>
 
           <li class="nav-item">
@@ -284,7 +336,7 @@
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="pergunta py-2">
             <a
               class="lead"
@@ -411,7 +463,7 @@
       </div>
     </section>
 
-    <footer class="bg-dark text-white">
+    <footer class="bg-dark text-white mt-5">
       <div class="container py-4">
         <div class="row">
           <div class="col-md-3 col-6">
@@ -483,6 +535,10 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">Caravan C 2017. Alguns direitos reservados.</p>
       </div>
     </footer>
   </body>

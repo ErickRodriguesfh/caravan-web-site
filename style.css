@@ -22,3 +22,8 @@ body {
     position: relative;
   }
 }
+
+.lista-plano {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}

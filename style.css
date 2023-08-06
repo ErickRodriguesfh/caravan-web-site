@@ -11,6 +11,10 @@ body {
   background-size: cover;
 }
 
+.inscricao {
+  margin-bottom: 0.5rem;
+}
+
 @media (max-width: 767px) {
   #home-quote .display-4 {
     font-size: 2.5rem;
@@ -23,7 +27,10 @@ body {
   }
 }
 
-.lista-plano {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.lista-plano li + li {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.lista-plano li {
   padding: 1rem;
 }
